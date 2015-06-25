@@ -1,0 +1,318 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="64bc16ae-66e8-40fc-aded-28e971daacc2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>AR_2010</ID>
+  <Name>AR_2010</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>MDXFilterComponent</Name>
+      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition"&gt;&lt;FilterItem&gt;&lt;HierarchyUniqueName&gt;[dimTime].[TimeInt]&lt;/HierarchyUniqueName&gt;&lt;Condition xsi:type="EqualTo"&gt;&lt;Members&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2003]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2004]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2005]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2006]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2007]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2008]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2009]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2010]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;/Members&gt;&lt;/Condition&gt;&lt;/FilterItem&gt;&lt;/FilterItems&gt;&lt;/Filter&gt;</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="0efa054c-6cea-42a1-b9d2-29161a2fa091">
+    <DataSourceID>.</DataSourceID>
+    <CubeID>StexAnalyzer</CubeID>
+    <CubeDimensionID>dimCompanies</CubeDimensionID>
+    <Filter>( SELECT ( { [dimTime].[TimeInt].[valueYear].&amp;[2003], [dimTime].[TimeInt].[valueYear].&amp;[2004], [dimTime].[TimeInt].[valueYear].&amp;[2005], [dimTime].[TimeInt].[valueYear].&amp;[2006], [dimTime].[TimeInt].[valueYear].&amp;[2007], [dimTime].[TimeInt].[valueYear].&amp;[2008], [dimTime].[TimeInt].[valueYear].&amp;[2009], [dimTime].[TimeInt].[valueYear].&amp;[2010] } ) ON COLUMNS FROM [StexAnalyzer])</Filter>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a7fbb98b-096e-4f2b-9ff7-05fec5634442">
+      <ID>companyID</ID>
+      <Name>companyID</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="4f228342-5b9b-484a-903a-0c174ca7c621">
+        <CubeID>StexAnalyzer</CubeID>
+        <CubeDimensionID>dimCompanies</CubeDimensionID>
+        <AttributeID>Company Id</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Key</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4e4f0113-ea34-4e55-9c81-76021f226222">
+      <ID>companySize</ID>
+      <Name>companySize</Name>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="03e89649-00ba-48c5-b96a-c0fde7dd4374">
+        <CubeID>StexAnalyzer</CubeID>
+        <CubeDimensionID>dimCompanies</CubeDimensionID>
+        <AttributeID>Company Size</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Discrete</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c1f1a855-1b4a-4732-a0b1-8cc5a9a53d0d">
+      <ID>capital</ID>
+      <Name>capital</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="bc6dbff7-d8d1-4f08-b823-ad19bd916417">
+        <MeasureID>Company Capital</MeasureID>
+      </Source>
+      <Content>Discretized</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0034389f-1f4f-4f33-ad9b-d472d3358f59">
+      <ID>currencyValue</ID>
+      <Name>currencyValue</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="13913bd1-d063-47b9-a1aa-2474f38b2004">
+        <MeasureID>Currency Value</MeasureID>
+      </Source>
+      <Content>Discretized</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="257efb89-1ad4-46a9-ad8e-f36be021ee7d">
+      <ID>enPrice</ID>
+      <Name>enPrice</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="13801bbf-db24-4500-90a0-c3ab94d41eeb">
+        <MeasureID>Energy Price</MeasureID>
+      </Source>
+      <Content>Discretized</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="dafe6d3a-2dd7-4a65-97e6-33fb65a7d402">
+      <ID>stValueEnd</ID>
+      <Name>stValueEnd</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="fe21b3d5-57ab-46d9-94eb-082ea0a4cfb8">
+        <MeasureID>Stocks Value End</MeasureID>
+      </Source>
+      <Content>Discretized</Content>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="cac517aa-eab8-468c-9c53-8800631dbf5a">
+      <Annotations>
+        <Annotation>
+          <Name>MDXFilterComponent</Name>
+          <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition"&gt;&lt;FilterItem&gt;&lt;HierarchyUniqueName&gt;[dimTime].[TimeInt]&lt;/HierarchyUniqueName&gt;&lt;Condition xsi:type="EqualTo"&gt;&lt;Members&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2003]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2004]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2005]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2006]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2007]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2008]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2009]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2010]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;/Members&gt;&lt;/Condition&gt;&lt;/FilterItem&gt;&lt;/FilterItems&gt;&lt;/Filter&gt;</Value>
+        </Annotation>
+      </Annotations>
+      <ID>dimTime</ID>
+      <Name>dimTime</Name>
+      <SourceMeasureGroup dwd:design-time-name="81697b98-b163-4fb7-bfb1-09b43f838f1b">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>StexAnalyzer</CubeID>
+        <MeasureGroupID>Fact Stocks</MeasureGroupID>
+        <RefreshInterval>PT1S</RefreshInterval>
+        <Filter>( SELECT ( { [dimTime].[TimeInt].[valueYear].&amp;[2003], [dimTime].[TimeInt].[valueYear].&amp;[2004], [dimTime].[TimeInt].[valueYear].&amp;[2005], [dimTime].[TimeInt].[valueYear].&amp;[2006], [dimTime].[TimeInt].[valueYear].&amp;[2007], [dimTime].[TimeInt].[valueYear].&amp;[2008], [dimTime].[TimeInt].[valueYear].&amp;[2009], [dimTime].[TimeInt].[valueYear].&amp;[2010] } ) ON COLUMNS FROM [StexAnalyzer])</Filter>
+      </SourceMeasureGroup>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b4ee59f2-e761-4694-9160-091936da1875">
+          <ID>dateId</ID>
+          <Name>dateId</Name>
+          <IsKey>true</IsKey>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="9b7bb4a7-7cea-4fab-a133-3cc1e863deeb">
+            <CubeID>StexAnalyzer</CubeID>
+            <CubeDimensionID>dimTime</CubeDimensionID>
+            <AttributeID>Date ID</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Key</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0a83c185-ba8e-404f-9a00-8545b13d5de1">
+          <ID>enPrice</ID>
+          <Name>enPrice</Name>
+          <Type>Double</Type>
+          <Source xsi:type="MeasureBinding" dwd:design-time-name="dbd6901e-5280-4e43-8ce3-3b493fa2f15b">
+            <MeasureID>Energy Price</MeasureID>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f1d99eb0-abea-46a9-a77c-4a8514d32ce0">
+          <ID>stValueEnd</ID>
+          <Name>stValueEnd</Name>
+          <Type>Double</Type>
+          <Source xsi:type="MeasureBinding" dwd:design-time-name="d26b7610-ea0b-4ffb-97cb-316da9ce0839">
+            <MeasureID>Stocks Value End</MeasureID>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="169db550-1320-4be3-9bf8-2da6d3b906e4">
+      <Annotations>
+        <Annotation>
+          <Name>MDXFilterComponent</Name>
+          <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition"&gt;&lt;FilterItem&gt;&lt;HierarchyUniqueName&gt;[dimTime].[TimeInt]&lt;/HierarchyUniqueName&gt;&lt;Condition xsi:type="EqualTo"&gt;&lt;Members&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2003]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2004]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2005]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2006]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2007]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2008]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2009]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[dimTime].[TimeInt].[valueYear].&amp;amp;[2010]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;/Members&gt;&lt;/Condition&gt;&lt;/FilterItem&gt;&lt;/FilterItems&gt;&lt;/Filter&gt;</Value>
+        </Annotation>
+      </Annotations>
+      <ID>dimFields</ID>
+      <Name>dimFields</Name>
+      <SourceMeasureGroup dwd:design-time-name="ad374a6a-5ead-406e-9722-ec4c7e8d0e9a">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>StexAnalyzer</CubeID>
+        <MeasureGroupID>Fact Stocks</MeasureGroupID>
+        <RefreshInterval>PT1S</RefreshInterval>
+        <Filter>( SELECT ( { [dimTime].[TimeInt].[valueYear].&amp;[2003], [dimTime].[TimeInt].[valueYear].&amp;[2004], [dimTime].[TimeInt].[valueYear].&amp;[2005], [dimTime].[TimeInt].[valueYear].&amp;[2006], [dimTime].[TimeInt].[valueYear].&amp;[2007], [dimTime].[TimeInt].[valueYear].&amp;[2008], [dimTime].[TimeInt].[valueYear].&amp;[2009], [dimTime].[TimeInt].[valueYear].&amp;[2010] } ) ON COLUMNS FROM [StexAnalyzer])</Filter>
+      </SourceMeasureGroup>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2fa253f7-2811-4da2-a225-240fef5feabe">
+          <ID>fieldId</ID>
+          <Name>fieldId</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="8c26ed45-6df1-41b1-b092-b0283da96920">
+            <CubeID>StexAnalyzer</CubeID>
+            <CubeDimensionID>dimFields</CubeDimensionID>
+            <AttributeID>fieldId</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Key</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e90ece2e-effe-4a9f-b780-23ddd85c17f5">
+          <ID>fieldCategory</ID>
+          <Name>fieldCategory</Name>
+          <Type>Text</Type>
+          <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="509190a4-9fd6-4f04-a872-7a8ab6bf2d60">
+            <CubeID>StexAnalyzer</CubeID>
+            <CubeDimensionID>dimFields</CubeDimensionID>
+            <AttributeID>Field Category</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discrete</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="234920e7-e86d-427b-b736-9471339f7dfb">
+          <ID>capital</ID>
+          <Name>capital</Name>
+          <Type>Double</Type>
+          <Source xsi:type="MeasureBinding" dwd:design-time-name="3047b2d5-171a-434c-92f6-5312da0b3cba">
+            <MeasureID>Company Capital</MeasureID>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+      </Columns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="1edf51ee-ce4f-4f63-b8e1-cac8f44cd503">
+      <ID>AR_2010</ID>
+      <Name>AR_2010</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="533e588b-ca77-49a8-8b20-fc85227f01c3">
+          <ID>companyID</ID>
+          <Name>companyID</Name>
+          <SourceColumnID>companyID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="df328bc5-e1fe-4bd8-aba3-7388316dde0c">
+          <ID>companySize</ID>
+          <Name>companySize</Name>
+          <SourceColumnID>companySize</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="64172d64-677b-4233-9b13-ade9a53cb0cb">
+          <ID>capital</ID>
+          <Name>capital</Name>
+          <SourceColumnID>capital</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7ceed06f-a615-471b-83f3-9929df79e3ab">
+          <ID>currencyValue</ID>
+          <Name>currencyValue</Name>
+          <SourceColumnID>currencyValue</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="0c90fee5-bd60-40b9-907a-c2e880be9bce">
+          <ID>enPrice</ID>
+          <Name>enPrice</Name>
+          <SourceColumnID>enPrice</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e2a525ab-7314-4769-9600-ca39bdee78c7">
+          <ID>stValueEnd</ID>
+          <Name>stValueEnd</Name>
+          <SourceColumnID>stValueEnd</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="3b8035d5-3895-4867-8b03-e7a570b284f3">
+          <ID>dimTime</ID>
+          <Name>dimTime</Name>
+          <SourceColumnID>dimTime</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="444461cf-0d3d-45c5-b78e-f78b0e0b4ae2">
+              <ID>dateId</ID>
+              <Name>dateId</Name>
+              <SourceColumnID>dateId</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column dwd:design-time-name="ad19cd41-f762-4942-8297-cec771786ba4">
+              <ID>enPrice</ID>
+              <Name>enPrice</Name>
+              <SourceColumnID>enPrice</SourceColumnID>
+              <Usage>Predict</Usage>
+            </Column>
+            <Column dwd:design-time-name="0e7d64cd-d977-453e-80c0-6cb573dab904">
+              <ID>stValueEnd</ID>
+              <Name>stValueEnd</Name>
+              <SourceColumnID>stValueEnd</SourceColumnID>
+              <Usage>Predict</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="92b3f649-2cfa-4ba0-bb44-690ff2825210">
+          <ID>dimFields</ID>
+          <Name>dimFields</Name>
+          <SourceColumnID>dimFields</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="948c1e63-a3b5-49b0-a77c-b626b0c55123">
+              <ID>fieldId</ID>
+              <Name>fieldId</Name>
+              <SourceColumnID>fieldId</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column dwd:design-time-name="3cc287ba-4144-4bba-a34b-a864578095d2">
+              <ID>fieldCategory</ID>
+              <Name>fieldCategory</Name>
+              <SourceColumnID>fieldCategory</SourceColumnID>
+            </Column>
+            <Column dwd:design-time-name="929f459b-5eb0-422a-8e39-431a8df745ff">
+              <ID>capital</ID>
+              <Name>capital</Name>
+              <SourceColumnID>capital</SourceColumnID>
+              <Usage>Predict</Usage>
+            </Column>
+          </Columns>
+        </Column>
+      </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

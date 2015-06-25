@@ -1,0 +1,105 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3b79f3b4-c848-40c4-bf98-95ff205391e0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DMM_Fields_OGPrice</ID>
+  <Name>DMM_Fields_OGPrice</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2633" scrolltop="-860" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="17912" y="10213" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="0100000090019e330100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="vfactsWithOG" left="1998" top="1376" logicalid="7" controlid="2" masterid="0" hint1="0" hint2="0" width="3069" height="4564" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000fd0b0000d4110000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_vfactsWithOG" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-2633</DiagramViewPortLeft>
+            <DiagramViewPortTop>-860</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>StockExchangeData</DataSourceID>
+  <Schema>
+    <xs:schema id="DMM_Fields_OGPrice" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="DMM_Fields_OGPrice" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="58ab739f-cb50-492f-931a-f236ff795787">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_vfactsWithOG" msprop:design-time-name="315ba2ae-52fb-480d-8e38-933a8ba88579" msprop:FriendlyName="vfactsWithOG" msprop:DbSchemaName="dbo" msprop:DbTableName="vfactsWithOG" msprop:TableType="View">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="dateId" msprop:design-time-name="2ca2899c-2180-44d1-a47a-05392b895967" msprop:DbColumnName="dateId" msprop:FriendlyName="dateId" type="xs:int" />
+                  <xs:element name="companyId" msprop:design-time-name="ebcf285d-45e3-4434-b421-7331a15e4bcb" msprop:DbColumnName="companyId" msprop:FriendlyName="companyId" type="xs:int" />
+                  <xs:element name="currencyValue" msprop:design-time-name="b42a1cbc-9150-421b-97c6-25f0b8c6436a" msprop:DbColumnName="currencyValue" msprop:FriendlyName="currencyValue" type="xs:double" />
+                  <xs:element name="companyCapital" msprop:design-time-name="76263388-8c6b-487b-ba98-270656e17128" msprop:DbColumnName="companyCapital" msprop:FriendlyName="companyCapital" type="xs:double" minOccurs="0" />
+                  <xs:element name="oilEnd" msprop:design-time-name="661c457a-4d86-4c9f-9b50-9820219c70f5" msprop:DbColumnName="oilEnd" msprop:FriendlyName="oilEnd" type="xs:double" minOccurs="0" />
+                  <xs:element name="gasEnd" msprop:design-time-name="b1b4b85e-8051-4e71-a817-ea9bef3b120a" msprop:DbColumnName="gasEnd" msprop:FriendlyName="gasEnd" type="xs:double" minOccurs="0" />
+                  <xs:element name="companyStockPrice" msprop:design-time-name="760ec0be-af1a-4346-a44e-0954a25d7da1" msprop:DbColumnName="companyStockPrice" type="xs:double" minOccurs="0" />
+                  <xs:element name="companyName" msprop:design-time-name="3b41d032-b10d-467a-85a8-e86caffb96ce" msprop:DbColumnName="companyName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="300" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="valueDate" msprop:DbColumnName="valueDate" msprop:design-time-name="21ae21f9-4d6c-4078-97c1-a7a18313eb04" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_vfactsWithOG" />
+          <xs:field xpath="companyId" />
+          <xs:field xpath="dateId" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <DMM_Fields_OGPrice xmlns="" />
+  </Schema>
+</DataSourceView>

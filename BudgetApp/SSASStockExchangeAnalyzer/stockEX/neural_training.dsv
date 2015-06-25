@@ -1,0 +1,69 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="27b56e27-a28c-4b24-abda-75ed1eba3f59" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>neural_training</ID>
+  <Name>neural_training</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>StockExchangeData</DataSourceID>
+  <Schema>
+    <xs:schema id="neural_training" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="neural_training" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="62eedd25-3e39-4ae1-952c-a00843243d1d">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_vFactInvestementsDataSet_Neural" msprop:design-time-name="6382d9f6-4199-4750-9977-44a52188303e" msprop:DbTableName="vFactInvestementsDataSet_Neural" msprop:FriendlyName="vFactInvestementsDataSet_Neural" msprop:DbSchemaName="dbo" msprop:TableType="View">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="dateId" msprop:design-time-name="71342a26-1c29-471d-8454-d87629ad94f4" msprop:DbColumnName="dateId" msprop:FriendlyName="dateId" type="xs:int" minOccurs="0" />
+                  <xs:element name="companyId" msprop:design-time-name="51d691d4-dbff-4a3b-8de7-fda82501d941" msprop:DbColumnName="companyId" msprop:FriendlyName="companyId" type="xs:int" minOccurs="0" />
+                  <xs:element name="stockValue" msdata:ReadOnly="true" msprop:design-time-name="381f9aa5-545f-4539-93ce-e9181f4de42e" msprop:DbColumnName="stockValue" msprop:FriendlyName="stockValue" type="xs:double" minOccurs="0" />
+                  <xs:element name="stocksAmount" msprop:design-time-name="38e113fd-d22e-499d-8cdb-8df504282d34" msprop:DbColumnName="stocksAmount" msprop:FriendlyName="stocksAmount" type="xs:int" minOccurs="0" />
+                  <xs:element name="oilPrice" msdata:ReadOnly="true" msprop:design-time-name="5329e228-3267-4353-8b68-10c180af852d" msprop:DbColumnName="oilPrice" msprop:FriendlyName="oilPrice" type="xs:double" minOccurs="0" />
+                  <xs:element name="gasPrice" msdata:ReadOnly="true" msprop:design-time-name="9c02acb2-d04e-4628-90cf-b7080f87e7e0" msprop:DbColumnName="gasPrice" msprop:FriendlyName="gasPrice" type="xs:double" minOccurs="0" />
+                  <xs:element name="energyUnitPrice" msdata:ReadOnly="true" msprop:design-time-name="2f5cab78-e3f4-406a-832a-44e4fed0ab21" msprop:DbColumnName="energyUnitPrice" msprop:FriendlyName="energyUnitPrice" type="xs:double" minOccurs="0" />
+                  <xs:element name="Vcurs" msprop:design-time-name="dba70d74-cb0f-432c-a354-f467dc6b823e" msprop:DbColumnName="Vcurs" msprop:FriendlyName="Vcurs" type="xs:double" />
+                  <xs:element name="investment" msdata:ReadOnly="true" msprop:design-time-name="fc6ad211-98ad-426f-9e4e-bed9e8b234e7" msprop:DbColumnName="investment" msprop:FriendlyName="investment" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <neural_training xmlns="" />
+  </Schema>
+</DataSourceView>

@@ -1,0 +1,166 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e576b9ad-fe93-47fd-ad45-fe2c56909186" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>neural</ID>
+  <Name>neural</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="4" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6852" scrolltop="-7992" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23424" y="17004" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="vFactInvestementsDataSet_Neural" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3104" height="4004" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000200c0000a40f0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_vFactInvestementsDataSet_Neural" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dimCompanies" left="3360" top="-892" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2805" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000f50a0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_dimCompanies" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="2260" top="-348" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="1400" height="1258" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[vFactInvestementsDataSet_Neural-dimCompanies]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="14" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="3360" y="510" />
+                    <point x="2960" y="510" />
+                    <point x="2960" y="-48" />
+                    <point x="2560" y="-48" />
+                    <point x="2560" y="352" />
+                    <point x="3124" y="352" />
+                  </connector>
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-6852</DiagramViewPortLeft>
+            <DiagramViewPortTop>-7992</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>StockExchangeData</DataSourceID>
+  <Schema>
+    <xs:schema id="neural" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="neural" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="8ee96b82-e612-4843-a840-af8466ec8163">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_vFactInvestementsDataSet_Neural" msprop:design-time-name="978cad90-11c7-420d-a27b-6908bfac17a8" msprop:FriendlyName="vFactInvestementsDataSet_Neural" msprop:DbSchemaName="dbo" msprop:DbTableName="vFactInvestementsDataSet_Neural" msprop:TableType="View">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="dateId" msprop:design-time-name="6a4012dd-6b24-4203-8f22-58cf2410bf6f" msprop:DbColumnName="dateId" msprop:FriendlyName="dateId" type="xs:int" minOccurs="0" />
+                  <xs:element name="companyId" msprop:design-time-name="eaf7f8db-db60-4d86-9cf4-e9bb9a458662" msprop:DbColumnName="companyId" msprop:FriendlyName="companyId" type="xs:int" minOccurs="0" />
+                  <xs:element name="stockValue" msdata:ReadOnly="true" msprop:design-time-name="82405dbc-1cfd-4a1d-8967-0b61d5635276" msprop:DbColumnName="stockValue" msprop:FriendlyName="stockValue" type="xs:double" minOccurs="0" />
+                  <xs:element name="stocksAmount" msprop:design-time-name="430a1493-1532-487f-8939-b76e262ac87b" msprop:DbColumnName="stocksAmount" msprop:FriendlyName="stocksAmount" type="xs:int" minOccurs="0" />
+                  <xs:element name="oilPrice" msdata:ReadOnly="true" msprop:design-time-name="6dac3afa-d9fd-4bf5-9484-77b8eabcae44" msprop:DbColumnName="oilPrice" msprop:FriendlyName="oilPrice" type="xs:double" minOccurs="0" />
+                  <xs:element name="gasPrice" msdata:ReadOnly="true" msprop:design-time-name="fcb2a118-346c-43c2-a434-71968b73226f" msprop:DbColumnName="gasPrice" msprop:FriendlyName="gasPrice" type="xs:double" minOccurs="0" />
+                  <xs:element name="energyUnitPrice" msdata:ReadOnly="true" msprop:design-time-name="78908e84-330a-4045-bfeb-d4de8fb975db" msprop:DbColumnName="energyUnitPrice" msprop:FriendlyName="energyUnitPrice" type="xs:double" minOccurs="0" />
+                  <xs:element name="Vcurs" msprop:design-time-name="307c479f-34fe-4140-972d-979892682b38" msprop:DbColumnName="Vcurs" msprop:FriendlyName="Vcurs" type="xs:double" />
+                  <xs:element name="investment" msdata:ReadOnly="true" msprop:design-time-name="a5e7ee76-7f81-4521-a4b4-bec481b4993f" msprop:DbColumnName="investment" msprop:FriendlyName="investment" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dimCompanies" msprop:design-time-name="3203ec03-3393-4749-abbc-286e70961a79" msprop:DbTableName="dimCompanies" msprop:FriendlyName="dimCompanies" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="companyId" msprop:design-time-name="dcb807a0-36b2-479e-8fa8-9f0d1bc5c823" msprop:DbColumnName="companyId" msprop:FriendlyName="companyId" type="xs:int" />
+                  <xs:element name="companyName" msprop:design-time-name="f2bb4c29-997f-45c4-9b0a-ddffa5d49a89" msprop:DbColumnName="companyName" msprop:FriendlyName="companyName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="300" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="fieldId" msprop:design-time-name="89e6fc73-c4c9-4602-a19e-e901707bde4a" msprop:DbColumnName="fieldId" msprop:FriendlyName="fieldId" type="xs:int" minOccurs="0" />
+                  <xs:element name="companyCapital" msprop:design-time-name="864d0587-3d5b-4140-ac18-20e80826907a" msprop:DbColumnName="companyCapital" msprop:FriendlyName="companyCapital" type="xs:double" minOccurs="0" />
+                  <xs:element name="companySize" msprop:design-time-name="db0dcaf6-10c7-491f-9403-4af1d1925b21" msprop:DbColumnName="companySize" msprop:FriendlyName="companySize" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="companyStatus" msprop:design-time-name="19cfa2a5-6fc4-4993-b79f-d5cc898aa9c7" msprop:DbColumnName="companyStatus" msprop:FriendlyName="companyStatus" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dimCompanies" />
+          <xs:field xpath="companyId" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="vFactInvestementsDataSet_Neural-dimCompanies" msdata:parent="dbo_dimCompanies" msdata:child="dbo_vFactInvestementsDataSet_Neural" msdata:parentkey="companyId" msdata:childkey="companyId" msprop:IsLogical="True" msprop:Description="" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <neural xmlns="" />
+  </Schema>
+</DataSourceView>

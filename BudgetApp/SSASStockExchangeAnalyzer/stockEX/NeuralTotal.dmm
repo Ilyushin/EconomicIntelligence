@@ -1,0 +1,198 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="562dec85-665c-4242-8a8c-1844b5824b8e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>NeuralTotal</ID>
+  <Name>NeuralTotal</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_vFactInvestments_NeuralTotal</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="9db806ad-4803-4839-85e5-ec4dc226a548">
+    <DataSourceViewID>neural_total</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c8165560-db8d-4956-9bb6-117d77b18ccf">
+      <ID>c Rate</ID>
+      <Name>c Rate</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="089935f6-8f8d-47ed-b9e9-e6aeb34fa73c">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ad5b0f6c-89dd-4cc2-995e-6c9c375dedb4">
+            <TableID>dbo_vFactInvestments_NeuralTotal</TableID>
+            <ColumnID>cRate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5097f57f-eb03-47f7-b990-e1f2ce7b6f26">
+      <ID>Date Id</ID>
+      <Name>Date Id</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7993221c-c21c-4995-88f1-6af6b21a74e7">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8fda255c-5c34-4a2f-bd99-6caa70f5cfb4">
+            <TableID>dbo_vFactInvestments_NeuralTotal</TableID>
+            <ColumnID>dateId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="dfbab8ef-a272-46e8-85af-e21a835af22b">
+      <ID>Eunit Price</ID>
+      <Name>Eunit Price</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0ad13827-d8f5-4796-8f96-3bf94ada56a3">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e57d153a-9a0c-449b-b477-fcf235ab7821">
+            <TableID>dbo_vFactInvestments_NeuralTotal</TableID>
+            <ColumnID>eunitPrice</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5d88e690-8b33-439f-a68e-86d260a25478">
+      <ID>Investment</ID>
+      <Name>Investment</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0480be72-ec0f-422d-8470-bc2c79084748">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f500c6ca-8c51-47de-9040-06166f8a679e">
+            <TableID>dbo_vFactInvestments_NeuralTotal</TableID>
+            <ColumnID>investment</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="64908750-cbd4-4f72-b37c-a62d4d51259e">
+      <ID>Oil Price</ID>
+      <Name>Oil Price</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="911c86f0-814f-4b8d-aaef-1034ce11646d">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d5df4352-5ab6-4ff4-bc09-f8cbb35287ff">
+            <TableID>dbo_vFactInvestments_NeuralTotal</TableID>
+            <ColumnID>oilPrice</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5ac9fc8b-9334-4cb1-87cc-f88aef6a59fb">
+      <ID>Stock Value</ID>
+      <Name>Stock Value</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0626a0fa-8847-4b06-90d9-e647fe7f223f">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e5ed8c34-c27b-47a8-b642-da72856b6eb3">
+            <TableID>dbo_vFactInvestments_NeuralTotal</TableID>
+            <ColumnID>stockValue</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="a22eb0b8-55a5-46d1-a182-74589e4c30bd">
+      <ID>NeuralTotal_Model</ID>
+      <Name>NeuralTotal_Model</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Neural_Network</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="74447293-ec84-4cca-bdc2-bc957336e30c">
+          <ID>c Rate</ID>
+          <Name>c Rate</Name>
+          <SourceColumnID>c Rate</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="de63b84d-b242-486c-9328-513ed7a450b9">
+          <ID>Date Id</ID>
+          <Name>Date Id</Name>
+          <SourceColumnID>Date Id</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="dbfdd694-0a80-412e-9547-408f9d77431a">
+          <ID>Eunit Price</ID>
+          <Name>Eunit Price</Name>
+          <SourceColumnID>Eunit Price</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2e1477db-2545-4d78-896e-a4ad0d680df3">
+          <ID>Investment</ID>
+          <Name>Investment</Name>
+          <SourceColumnID>Investment</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="902b6a99-3a58-40d3-8ec5-ad2cac7da648">
+          <ID>Oil Price</ID>
+          <Name>Oil Price</Name>
+          <SourceColumnID>Oil Price</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f4febe1c-84b6-41ac-b02d-f128b28f51bc">
+          <ID>Stock Value</ID>
+          <Name>Stock Value</Name>
+          <SourceColumnID>Stock Value</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>35</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

@@ -1,0 +1,240 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e0bb9b89-cbbe-4f27-bd4e-dd1ce2b8be89" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>LR_OGPrice</ID>
+  <Name>LR_OGPrice</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_vfactsWithOG</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6647" scrolltop="-2745" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="16801" y="9022" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="0100000090019e330100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="vfactsWithOG" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3466" height="3532" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a00008a0d0000cc0d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_vfactsWithOG" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-6647</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2745</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="394ef0f1-bd3c-49d7-9b92-92909bf3dd3a">
+    <DataSourceViewID>DMM_Fields_OGPrice</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2bc73122-4873-4dd7-a03e-3bcaf3c39b6f">
+      <ID>Company Name</ID>
+      <Name>Company Name</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="70af2459-27bf-46fa-b429-01f544533da5">
+          <DataType>WChar</DataType>
+          <DataSize>300</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="99c3a4d7-9ce9-4888-81a7-62ef6676a9a8">
+            <TableID>dbo_vfactsWithOG</TableID>
+            <ColumnID>companyName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="52338c2d-77f8-40ba-9566-f1f0df578607">
+      <ID>Company Capital</ID>
+      <Name>Company Capital</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a08501d1-fd4b-4a6d-b020-6f5734fc641c">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cb1021e1-a475-46e7-a3e3-84d19104943d">
+            <TableID>dbo_vfactsWithOG</TableID>
+            <ColumnID>companyCapital</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="20cab4c4-29d6-4f0a-887d-615ce6250f4b">
+      <ID>Company Id</ID>
+      <Name>Company Id</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="feb2215d-a9d8-422d-849d-8e4c75561bdc">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="88a52d2c-7e9a-4042-9dfc-f9a7394b867a">
+            <TableID>dbo_vfactsWithOG</TableID>
+            <ColumnID>companyId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1de9e99e-b508-4490-8e34-694d0ff82c9e">
+      <ID>Company Stock Price</ID>
+      <Name>Company Stock Price</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f7ff09f2-e600-4d74-bde0-8062d75dd7e3">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d44544f4-31c6-4163-b6a4-d2a5dfbae453">
+            <TableID>dbo_vfactsWithOG</TableID>
+            <ColumnID>companyStockPrice</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9adc1ef5-cadd-4351-ab5f-e91061daa6f8">
+      <ID>Currency Value</ID>
+      <Name>Currency Value</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="de9881f7-8702-45bf-954c-69760b47c791">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f60c3918-5f01-47df-9bb8-d0e47b85f3d8">
+            <TableID>dbo_vfactsWithOG</TableID>
+            <ColumnID>currencyValue</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c6d502a8-a549-47d7-8e5e-100198b1b68f">
+      <ID>Gas End</ID>
+      <Name>Gas End</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="63d9429b-cc04-4b42-a6f9-64758dd491d1">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2deef5f0-70e1-4613-95c6-78fa6b579df3">
+            <TableID>dbo_vfactsWithOG</TableID>
+            <ColumnID>gasEnd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="69d4d9f2-435a-4b38-ba3e-0a0f67e21937">
+      <ID>Oil End</ID>
+      <Name>Oil End</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1b4699c5-cdab-4997-9756-f93af076b25b">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cdbe11b2-c71b-44af-bbdb-e1fadd65f36f">
+            <TableID>dbo_vfactsWithOG</TableID>
+            <ColumnID>oilEnd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="edbb2c21-b0c0-4d61-b917-433466138700">
+      <ID>LR_OGPrice</ID>
+      <Name>LR_OGPrice</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Logistic_Regression</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="4248f3ae-8a7d-4513-b634-bd7012927b4d">
+          <ID>Company Capital</ID>
+          <Name>Company Capital</Name>
+          <SourceColumnID>Company Capital</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="94bd6e57-4976-49ad-8cb3-f4aae3ac2569">
+          <ID>Company Id</ID>
+          <Name>Company Id</Name>
+          <SourceColumnID>Company Id</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="dd01f93c-4fbb-4ecb-84b3-8e3dd4051959">
+          <ID>Company Stock Price</ID>
+          <Name>Company Stock Price</Name>
+          <SourceColumnID>Company Stock Price</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="d89e07ca-e4db-4248-ae43-2e1767d45e85">
+          <ID>Currency Value</ID>
+          <Name>Currency Value</Name>
+          <SourceColumnID>Currency Value</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2ec90dfe-01ca-4bd1-8fec-cae9af108e7e">
+          <ID>Gas End</ID>
+          <Name>Gas End</Name>
+          <SourceColumnID>Gas End</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2ced39f1-896a-4a63-aabb-2317461a1731">
+          <ID>Oil End</ID>
+          <Name>Oil End</Name>
+          <SourceColumnID>Oil End</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>45</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

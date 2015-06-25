@@ -1,0 +1,98 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c14bd8f3-8385-4fac-8f25-014d894bdfb0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TSDollarByCompany</ID>
+  <Name>TSDollarByCompany</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7436" scrolltop="-3512" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="17912" y="10213" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="0100000090019e330100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="vCompanyStocksDollar" left="0" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3188" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000740c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_vCompanyStocksDollar" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-7436</DiagramViewPortLeft>
+            <DiagramViewPortTop>-3512</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>StockExchangeData</DataSourceID>
+  <Schema>
+    <xs:schema id="TSDollarByCompany" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="TSDollarByCompany" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="b6665dae-be2e-4828-988f-861b693715c6">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_vCompanyStocksDollar" msprop:design-time-name="d8276114-ba38-43fb-9ecd-b5ce3e735347" msprop:FriendlyName="vCompanyStocksDollar" msprop:DbSchemaName="dbo" msprop:DbTableName="vCompanyStocksDollar" msprop:TableType="View">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="dateId" msprop:design-time-name="fc249118-085d-4118-b916-0acf9116e737" msprop:DbColumnName="dateId" msprop:FriendlyName="dateId" type="xs:int" minOccurs="0" />
+                  <xs:element name="companyName" msprop:design-time-name="3f6bba49-1176-42b7-99bb-8c9109bec1f8" msprop:DbColumnName="companyName" msprop:FriendlyName="companyName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="300" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="stockValue" msdata:ReadOnly="true" msprop:design-time-name="04b5105d-94da-4ca3-a0ff-cc99515d5d6b" msprop:DbColumnName="stockValue" msprop:FriendlyName="stockValue" type="xs:double" minOccurs="0" />
+                  <xs:element name="stocksAmount" msdata:ReadOnly="true" msprop:design-time-name="1ef7c823-4769-4611-a609-4616d5617498" msprop:DbColumnName="stocksAmount" msprop:FriendlyName="stocksAmount" type="xs:double" minOccurs="0" />
+                  <xs:element name="currencyValue" msprop:design-time-name="d4f36b10-44b0-41db-8e9a-1d8142089e23" msprop:DbColumnName="currencyValue" msprop:FriendlyName="currencyValue" type="xs:double" />
+                  <xs:element name="companyCapital" msprop:design-time-name="1ad32b0f-2498-41a4-af71-5ee66df40927" msprop:DbColumnName="companyCapital" msprop:FriendlyName="companyCapital" type="xs:double" minOccurs="0" />
+                  <xs:element name="stockTotal" msdata:ReadOnly="true" msprop:design-time-name="ab0f0c9b-98e1-4e62-8298-a54525a11164" msprop:IsLogical="True" msprop:FriendlyName="stockTotal" msprop:Description="" msprop:DbColumnName="stockTotal" msprop:ComputedColumnExpression="stockValue * stocksAmount" type="xs:double" minOccurs="0" />
+                  <xs:element name="oilIndex" msprop:DbColumnName="oilIndex" msprop:design-time-name="b4763b75-c32d-447b-8b16-9513aaa222f0" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <TSDollarByCompany xmlns="" />
+  </Schema>
+</DataSourceView>

@@ -1,0 +1,100 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6633d3da-aa3f-415f-97cc-3176b1fa8fb0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TSDataSource</ID>
+  <Name>TSDataSource</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7402" scrolltop="-2996" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="17912" y="10213" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="0100000090019e330100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="vfactStocks" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3069" height="4220" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000fd0b00007c100000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_vfactStocks" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-7402</DiagramViewPortLeft>
+            <DiagramViewPortTop>-2996</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>StockExchangeData</DataSourceID>
+  <Schema>
+    <xs:schema id="TSDataSource" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="TSDataSource" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="ac3f8edd-3ff4-4deb-9da9-160efb427e55">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_vfactStocks" msprop:design-time-name="2ee6b8e7-a7bc-4209-be41-008fbd2ce10d" msprop:FriendlyName="vfactStocks" msprop:DbSchemaName="dbo" msprop:DbTableName="vfactStocks" msprop:TableType="View">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="dateId" msprop:design-time-name="16eef486-761b-40d0-b8fd-bb39f55e04df" msprop:DbColumnName="dateId" msprop:FriendlyName="dateId" type="xs:int" />
+                  <xs:element name="companyId" msprop:design-time-name="651a8809-c105-423d-9833-f4a6e6bd59de" msprop:DbColumnName="companyId" msprop:FriendlyName="companyId" type="xs:int" />
+                  <xs:element name="stocksValueStart" msprop:design-time-name="035f16bf-c9d5-4589-9681-2e210cda23a2" msprop:DbColumnName="stocksValueStart" msprop:FriendlyName="stocksValueStart" type="xs:double" minOccurs="0" />
+                  <xs:element name="stocksValueEnd" msprop:design-time-name="6cca8084-defd-4a93-b20d-4bf855d30447" msprop:DbColumnName="stocksValueEnd" msprop:FriendlyName="stocksValueEnd" type="xs:double" minOccurs="0" />
+                  <xs:element name="stocksAmount" msdata:ReadOnly="true" msprop:design-time-name="38d5cbe6-b413-4339-ad86-d0464a8b0db8" msprop:DbColumnName="stocksAmount" msprop:FriendlyName="stocksAmount" type="xs:double" minOccurs="0" />
+                  <xs:element name="energyPrice" msprop:design-time-name="57fe9dc4-68ae-429c-aadb-ffc6d89751d5" msprop:DbColumnName="energyPrice" msprop:FriendlyName="energyPrice" type="xs:double" minOccurs="0" />
+                  <xs:element name="stockId" msprop:design-time-name="7a20b609-5288-4ff6-8537-0071d4f66175" msprop:DbColumnName="stockId" msprop:FriendlyName="stockId" type="xs:int" />
+                  <xs:element name="currencyId" msprop:design-time-name="2453fd5a-ab2b-4f80-abb7-d46074e748fb" msprop:DbColumnName="currencyId" msprop:FriendlyName="currencyId" type="xs:int" />
+                  <xs:element name="currencyValue" msprop:design-time-name="2da1496b-04c6-449f-a1e9-800005aa3ce8" msprop:DbColumnName="currencyValue" msprop:FriendlyName="currencyValue" type="xs:double" />
+                  <xs:element name="companyCapital" msprop:design-time-name="405082c2-f7c9-459e-8dfe-924fdf93b217" msprop:DbColumnName="companyCapital" msprop:FriendlyName="companyCapital" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_vfactStocks" />
+          <xs:field xpath="companyId" />
+          <xs:field xpath="dateId" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <TSDataSource xmlns="" />
+  </Schema>
+</DataSourceView>

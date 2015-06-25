@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "stockEX", "stockEX\stockEX.dwproj", "{EC4E1F69-4376-4B74-B2C2-28402D3FFBA3}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://cdb.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = stockEX\\stockEX.dwproj
+		SccProjectName1 = stockEX
+		SccLocalPath1 = stockEX
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC4E1F69-4376-4B74-B2C2-28402D3FFBA3}.Development|Default.ActiveCfg = Development
+		{EC4E1F69-4376-4B74-B2C2-28402D3FFBA3}.Development|Default.Build.0 = Development
+		{EC4E1F69-4376-4B74-B2C2-28402D3FFBA3}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
