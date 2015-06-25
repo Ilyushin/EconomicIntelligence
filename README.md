@@ -5,7 +5,7 @@ The project focused on the use of public data to assess the economic situation i
 ##As sources are used:
 
 - Open data Ministry of Finance of the Russian Federation
-- These Moscow Exchange
+- Open data of Moscow Exchange
 - Google Finance Data
 
 ##Technologies used:
