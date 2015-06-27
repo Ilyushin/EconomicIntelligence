@@ -1,0 +1,101 @@
+<div id="page-wrapper" class="gray-bg" ng-style="{width: pageWidth}">
+    <div class="row wrapper border-bottom white-bg page-heading">
+	    <div class="col-xs-12">
+	        <h2>{{title}}</h2>
+	    </div>
+    </div>
+
+    <div class="row">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title"><h3>Чтобы оценить влияние доллара\нефти на капитализацию компании, введите следующие параметры</h3></div>
+            <div class="ibox-content">
+                <p>
+                    Здесь вы можете оценить степень влияния скачков курса доллара и стоимости нефти на капитализацию и средневзвешенную стоимость акций компании. Например, что будет если доллар упадет с 30 до 60 рублей, а нефть при этом вырастет с 50 до 70 рублей за баррель?
+                </p>
+            </div>
+            <div class="ibox-content">
+                <form role="form" class="form">
+                    <div class="form-group">
+                        <label сlass="sr-only">Название компании</label>
+                        <select ng-model="curComp" class="form-control" 
+                            ng-options="opt as opt.label for opt in companies">
+                        </select>
+                    </div>
+                    <div class="form-group col-xs-6">
+                        <label сlass="sr-only">Курс доллара на начало периода</label>
+                        <input type="text" class="form-control" ng-model="dollarStart">
+                    </div>
+                    <div class="form-group col-xs-6">
+                        <label сlass="sr-only">Стоимость нефти на начало периода</label>
+                        <input type="text" class="form-control" ng-model="oilStart">
+                    </div>
+                    <div class="form-group col-xs-6">
+                        <label сlass="sr-only">Курс доллара на конец периода</label>
+                        <input type="text" class="form-control" ng-model="dollarEnd">
+                    </div>
+                    <div class="form-group col-xs-6">
+                        <label сlass="sr-only">Стоимость нефти на конец периода</label>
+                        <input type="text" class="form-control" ng-model="oilEnd">
+                    </div>
+                    <button class="btn btn-primary" type="submit" ng-click="getTable()">Показать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-show="showTable">
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Процент изменения стоимости доллара</th>
+                            <th>Процент изменения стоимости нефти</th>
+                            <th>Процент изменения капитализации</th>
+                            <th>Процент изменения стоимости акций</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <i class="fa fa-level-up" ng-show="tableData.dollarInc>0"></i>
+                                <i class="fa fa-level-down" ng-show="tableData.dollarInc<0"></i>
+                                {{tableData.dollarInc}}%
+                            </td>
+                            <td>
+                                <i class="fa fa-level-up" ng-show="tableData.oilInc>0"></i>
+                                <i class="fa fa-level-down" ng-show="tableData.oilInc<0"></i>
+                                {{tableData.oilInc}}%
+                            </td>
+                            <td>
+                                <i class="fa fa-level-up" ng-show="tableData.capitalInc>0"></i>
+                                <i class="fa fa-level-down" ng-show="tableData.capitalInc<0"></i>
+                                {{tableData.capitalInc}}%
+                            </td>
+                            <td>
+                                <i class="fa fa-level-up" ng-show="tableData.stockInc>0"></i>
+                                <i class="fa fa-level-down" ng-show="tableData.stockInc<0"></i>
+                                {{tableData.stockInc}}%
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+	<div class="chart-container">	        
+    	<canvas tc-chartjs chart-type="line" chart-data="chartData" chart-options="chartOptions" auto-legend ng-click="chartClick($event)" chart="chart"></canvas>
+	</div>
+
+    <div class="footer">
+        <div class="pull-right">
+            <strong> </strong>
+        </div>
+        <div>
+            <strong>Copyright</strong> &copy; 2015
+        </div>
+    </div>
+</div>

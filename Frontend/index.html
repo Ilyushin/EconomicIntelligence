@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="contestApp">
+
+<head>
+    <!--[if lt IE 9]><script src="excanvas.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="es5-shim.js"></script><![endif]-->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Economic Intelligence</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Morris -->
+    <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+<div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu" ng-controller="menuController">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/m-logo.png" />
+                             </span>
+                    </div>
+                    <div class="logo-element">
+                        
+                    </div>
+
+                </li>
+                <li ng-repeat="(iKey,iData) in menuItems" ng-class="{active:curItem == iKey}">
+                    <a href="{{ iData.route }}" ng-click="setItem(iKey)"><i class="{{ iData.icon }}"></i> <span class="nav-label">{{ iData.name }}</span></a>
+                </li>   
+            </ul>
+
+        </div>
+    </nav>
+
+    <ng-view></ng-view>
+
+ </div>
+
+
+<!-- Mainly scripts -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Flot -->
+<script src="js/plugins/flot/jquery.flot.js"></script>
+<script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+<script src="js/plugins/flot/jquery.flot.spline.js"></script>
+<script src="js/plugins/flot/jquery.flot.resize.js"></script>
+<script src="js/plugins/flot/jquery.flot.pie.js"></script>
+<script src="js/plugins/flot/jquery.flot.symbol.js"></script>
+
+<!-- Peity -->
+<script src="js/plugins/peity/jquery.peity.min.js"></script>
+<script src="js/demo/peity-demo.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="js/plugins/pace/pace.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+<!-- Charts JS -->
+<script src="components/Chart.js/Chart.js"></script>
+
+
+<!-- Custom scripts -->
+<script src="components/angular/angular.js"></script>
+<script src="components/angular-route/angular-route.js"></script>
+<script src="components/angular-resource/angular-resource.js"></script>
+<script src="components/angular-strap/dist/angular-strap.min.js"></script>
+<script src="components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+<script src="components/tc-angular-chartjs/dist/tc-angular-chartjs.min.js"></script>
+<script src="js/angular_ru-ru.js"></script>
+<script src="js/init.js"></script>
+<script src="js/controllers/BankPredictionController.js"></script>
+<script src="js/controllers/DollarPredictionController.js"></script>
+<script src="js/controllers/ManufactureController.js"></script>
+<script src="js/controllers/CompanyCapitalize.js"></script>
+<script src="js/controllers/MenuController.js"></script>
+<script src="js/controllers/CompanyCapitalizeFixOil.js"></script>
+<script src="js/controllers/CompanyCapitalizeFixDollar.js"></script>
+<script src="js/controllers/StockPriceDeviation.js"></script>
+<script src="js/controllers/ManufacturePart.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>

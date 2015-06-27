@@ -1,0 +1,56 @@
+<div id="page-wrapper" class="gray-bg" ng-style="{width: pageWidth}">
+    <div class="row wrapper border-bottom white-bg page-heading">
+	    <div class="col-xs-12">
+	        <h2>{{title}}</h2>
+	    </div>
+    </div>
+
+    <div class="row">
+        <div class="ibox float-e-margins">
+           <div class="ibox-content">
+                <p>
+                    Вы можете оценить, как постепенное изменение (курса доллара, стоимости нефти) будет влиять на капитализацию/стоимость акций компании, входящей в выборку.
+                </p>
+            </div>
+            <div class="ibox-content">
+                <form role="form" class="form">
+                    <div class="form-group">
+                        <label сlass="sr-only">Название компании</label>
+                        <select ng-model="curComp" class="form-control" 
+                            ng-options="opt as opt.label for opt in companies">
+                        </select>
+                    </div>
+                    <div class="form-group col-xs-4">
+                        <label сlass="sr-only">Курс доллара на начало периода</label>
+                        <input type="text" class="form-control" ng-model="dollarStart">
+                    </div>
+                    <div class="form-group col-xs-4">
+                        <label сlass="sr-only">Курс доллара на конец периода</label>
+                        <input type="text" class="form-control" ng-model="dollarEnd">
+                    </div>
+                    <div class="form-group col-xs-4">
+                        <label сlass="sr-only">Шаг</label>
+                        <input type="text" class="form-control" ng-model="step">
+                    </div>
+                    <button class="btn btn-primary" type="submit" ng-click="getData()">Показать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+	<div class="chart-container" style="height: {{chartHeight}}px">	        
+    	<canvas tc-chartjs chart-type="line" chart-data="chartData" chart-options="chartOptions" auto-legend></canvas>
+	</div>
+
+    <div class="footer">
+        <div class="pull-right">
+            <strong> </strong>
+        </div>
+        <div>
+            <strong>Copyright</strong> &copy; 2015
+        </div>
+    </div>
+</div>

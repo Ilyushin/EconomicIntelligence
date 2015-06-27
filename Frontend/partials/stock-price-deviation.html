@@ -1,0 +1,75 @@
+<div id="page-wrapper" class="gray-bg" ng-style="{width: pageWidth}">
+    <div class="row wrapper border-bottom white-bg page-heading">
+	    <div class="col-xs-12">
+	        <h2>{{title}}</h2>
+	    </div>
+    </div>
+
+    <div class="row">
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <p>
+                    Вы можете найти те компании, акции которых "взлетели" за указанный период времени, определив самостоятельно величину взлета в рублях (разница между максимальным и минимальным значением курса в периоде).
+                </p>
+            </div>
+            <div class="ibox-content">
+                <form role="form" class="form">
+                    <div class="form-group col-xs-4">
+                        <label сlass="sr-only">Допустимый размер роста акций</label>
+                        <input type="text" class="form-control" ng-model="growSize">
+                    </div>
+                    <div class="form-group col-xs-4">
+                        <label сlass="sr-only">Начало периода</label>
+                        <input type="text" class="form-control" ng-model="fromDate" bs-datepicker  data-max-date="today" data-date-format="dd/MM/yyyy">
+                    </div>
+                    <div class="form-group col-xs-4">
+                        <label сlass="sr-only">Конец периода</label>
+                        <input type="text" class="form-control" ng-model="tillDate" bs-datepicker  data-date-format="dd/MM/yyyy"  data-max-date="today">
+                    </div>
+                    <button class="btn btn-primary" type="submit" ng-click="getTable()">Показать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-show="showTable">
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Название компании</th>
+                            <th>Минимальная цена акций</th>
+                            <th>Максимальная цена акций</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="(index, data) in tableData">
+                            <td>
+                                {{index + 1}}
+                            </td>
+                            <td>
+                                {{data.companyName}}
+                            </td>
+                            <td>
+                                {{data.valueMin}}
+                            </td>
+                            <td>
+                                {{data.valueMax}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="pull-right">
+            <strong> </strong>
+        </div>
+        <div>
+            <strong>Copyright</strong> &copy; 2015
+        </div>
+    </div>
+</div>

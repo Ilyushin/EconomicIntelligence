@@ -1,0 +1,41 @@
+<div id="page-wrapper" class="gray-bg" ng-style="{width: pageWidth}">
+    <div class="row wrapper border-bottom white-bg page-heading">
+	    <div class="col-xs-12">
+	        <h2>{{title}}</h2>
+	    </div>
+    </div>
+
+    <div class="row">
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <form role="form" class="form-inline">
+                    <div class="form-group">
+                        <label сlass="sr-only">Отрасль</label>
+                        <select ng-model="curMan" class="form-control" 
+                            ng-options="opt as opt.label for opt in mans">
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" type="submit" ng-click="getData()">Показать</button>
+                    <button class="btn btn-primary" type="submit" ng-click="minimizeScale()" ng-show="showScaleButton">Уменьшить масштаб</button>
+                </form>
+            </div>
+            <div class="ibox-title">При нажатии на точку на графике можно увидеть подробности за выбранный год</div>
+        </div>
+    </div>
+
+
+
+
+	<div class="chart-container" style="height: {{chartHeight}}px">	        
+    	<canvas tc-chartjs chart-type="line" chart-data="chartData" chart-options="chartOptions" auto-legend ng-click="chartClick($event)" chart="chart"></canvas>
+	</div>
+
+    <div class="footer">
+        <div class="pull-right">
+            <strong> </strong>
+        </div>
+        <div>
+            <strong>Copyright</strong> &copy; 2015
+        </div>
+    </div>
+</div>
