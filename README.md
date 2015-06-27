@@ -21,7 +21,7 @@ The project focused on the use of public data to assess the economic situation i
  - AngularJS
  - ChartJS
  - Twitter Bootstrap
- - 
+ 
 These were chosen so that the detail (granularity) in the set is not less than 1 day. The result has been created and filled with data analytic repository (Kimball model, topology - star), which was used to build a multi-dimensional databases and OLAP-based cubes on it, as well as models of analysis of data on two main algorithms: Microsoft Time Series, Microsoft Neural Network.
 
 To ensure interoperability frontend and backend server for backend-server was set up HTTP-Restful interface JSON-issuing documents in the form of finished sets.
